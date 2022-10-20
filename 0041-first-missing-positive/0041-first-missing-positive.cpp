@@ -2,10 +2,10 @@ class Solution {
 public:
     int firstMissingPositive(vector<int>& nums) {
         int smallest = 0;
-        std::map<int,int> mapping;
+        std::map<int,bool> mapping;
         for(auto i:nums){
             if(i>0){
-                mapping[i] = 1;
+                mapping[i] = true;
             }
         }
         int j=1;
