@@ -4,7 +4,9 @@ public:
         int smallest = 0;
         std::map<int,int> mapping;
         for(auto i:nums){
-            mapping[i] = 1;            
+            if(i>0){
+                mapping[i] = 1;
+            }
         }
         int j=1;
         while(j){
